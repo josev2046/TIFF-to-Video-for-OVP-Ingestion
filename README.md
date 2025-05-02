@@ -1,5 +1,7 @@
 # TIFF to Video for OVP Ingestion
 
+[![DOI](https://zenodo.org/badge/976627153.svg)](https://doi.org/10.5281/zenodo.15324063)
+
 A pragmatic workaround for ingesting static TIFF images into Online Video Platforms (OVPs) by converting them into short, static MP4 video files.
 
 ## Problem
