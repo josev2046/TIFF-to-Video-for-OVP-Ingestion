@@ -1,0 +1,14 @@
+@startuml
+participant "Shell Script" as Script
+participant "FFmpeg" as FFmpeg
+participant "Digital Asset Management (DAM)" as DAM
+
+loop For each TIFF file in folder
+  Script -> FFmpeg : Executes FFmpeg command for current TIFF
+  FFmpeg -> Script : Outputs converted video file (.mp4)
+end
+loop For each converted video file
+  Script -> DAM : Initiates asset ingestion for video file and metadata
+  DAM -> Script : Acknowledges successful ingestion
+end
+@enduml
