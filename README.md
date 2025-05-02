@@ -12,6 +12,9 @@ OVPs often lack direct support for still image ingestion, requiring a workaround
 
 Convert TIFF files to short (e.g., 5-second) MP4 videos to leverage the OVP's video ingestion pipeline.
 
+![image](https://github.com/user-attachments/assets/d5b0a625-ddca-4c94-b329-f849f4634419)
+
+
 ## Benefits
 
 * Centralized management of all visual assets within the OVP.
