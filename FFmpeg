@@ -1,0 +1,1 @@
+find . -maxdepth 1 -name "*.tif" -print0 | xargs -0 -I % bash -c 'filepath="%"; filename=$(basename "$filepath" .tif); ffmpeg -framerate 1 -i "$filepath" -c:v libx265 -preset veryslow -crf 16 -vf "scale=1920:1080,format=yuv444p" -r 1 -t 5 -movflags +faststart "$filename.mp4"'
